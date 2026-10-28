@@ -1,4 +1,4 @@
-package Learning.Amostra.Amostra.Amostra;
+package Learning;
 import java.awt.EventQueue;
 import java.awt.event.ActionListener;
 import java.io.File;

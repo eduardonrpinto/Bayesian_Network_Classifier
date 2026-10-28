@@ -1,4 +1,4 @@
-package Learning.Amostra.Amostra.Amostra;
+package Learning;
 
 import java.io.Serializable;
 import java.util.Arrays;

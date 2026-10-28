@@ -5,7 +5,7 @@ Não é na pasta src, é na pasta acima.
 fmd
 */
 //Acrescentar o package se tiver criado um package
-package Learning.Amostra.Amostra.Amostra;
+package Learning;
 
 
 import java.io.BufferedReader;
