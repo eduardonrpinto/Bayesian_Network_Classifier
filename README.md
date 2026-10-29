@@ -10,13 +10,13 @@ The project consists of the following Java source files:
 
 | File | Description |
 |---|---|
-| `Algoritmo.java` | Generates candidate graph structures and optimises them using MDL score improvements to learn the structure of a Bayesian network from a dataset. |
-| `Amostra.java` | Describe how a sample and its data are represented. |
-| `AplicacaoRede.java` | Describe the main functionality of the Bayesian network application. |
-| `AplicacaoClassificacao.java` | Describe how the classification application works. |
+| `Algoritmo.java` | Generates $S$ candidate graph and optimises them using MDL score improvements to learn the structure of a Bayesian network from a dataset.|
+| `Amostra.java` | Reads a CSV file and stores its rows as samples of integer-valued variables. It provides methods to add and remove samples, access observations, count occurrences of specified variable values, and retrieve variable domains. |
+| `AplicacaoRede.java` | Provides a graphical user interface that allows users to load a CSV dataset, specify the number of candidate graphs (parameter `S`), execute the Bayesian network learning algorithm, and save the trained network to a file. |
+| `AplicacaoClassificacao.java` | Provides a graphical user interface that allows users to download a trained Bayes Network Classifier, introduce a vector of biomedical observations and obtain a classification according to the trained classifier.  |
 | `Classificador.java` | Explain how the classifier assigns classes to samples. |
-| `Grafo.java` | Describe how the graph and its connections are represented. |
-| `RN.java` | Explain how the Bayesian network is represented and managed. |
+| `Grafo.java` | Class representing a Directed Acyclic Graph. |
+| `RN.java` | Class representing a Bayes Network. |
 
 All Java classes belong to the `learning` package.
 ## Requirements
