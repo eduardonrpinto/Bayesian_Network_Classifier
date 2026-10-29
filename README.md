@@ -56,6 +56,10 @@ javac -d out *.java
 
 The compiled classes will be placed in the `out` directory.
 
+## Datasets
+
+The `datasets` directory contains sample data for testing the application. Each one of them is associated with a disease (cancer, diabetes etc.), contains several vectors with biomedical data and provides a classification for these vectors according to weather they indicate the presence of the disease (1) or not (0). They should be used to train the Bayes Network Classifier.
+
 ## Running the Application
 
 To run the application, first run the `AplicacaoRede.java` file to train a Bayes Classifier.
@@ -75,39 +79,9 @@ java -cp out learning.AplicacaoClassificacao
 
 Run each command separately. If the application requires input files, ensure that the required files are available at the paths expected by the program.
 
-## Datasets and Testing
+## Author
 
-The `datasets/` directory is intended to contain sample data for testing the application.
-
-Suggested datasets include:
-
-- **Weather Classification:** A small categorical dataset for predicting whether an activity is recommended based on weather conditions.
-- **Iris Dataset:** A standard flower classification dataset. Numerical measurements may need to be discretised if the classifier supports only categorical variables.
-- **Car Evaluation Dataset:** A categorical dataset for predicting car acceptability.
-
-The datasets used must follow the input format expected by the application. Check the source code for the required file format, column structure and file paths before using external datasets.
-
-The Car Evaluation dataset is available from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/19/car+evaluation).
-
-## Troubleshooting
-
-### Main class not found
-
-Ensure the project has been compiled and use the fully qualified class name, including the lowercase package name `learning`.
-
-### Java compiler not found
-
-Install a JDK and ensure that `java` and `javac` are available in your terminal.
-
-### Dataset file not found
-
-Check that the required input files exist and that their paths match those expected by the application. Relative paths may depend on the directory from which the program is launched.
-
-## Authors
-
-- Eduardo
-- Mateus
-- Ana
+- Eduardo Pinto
 
 ## Repository
 
