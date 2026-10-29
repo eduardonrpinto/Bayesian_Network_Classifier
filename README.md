@@ -1,29 +1,24 @@
 # Bayesian Network Classifier
 
-A Java implementation of a Bayesian Network Classifier, developed as an academic project. The application provides functionality for representing Bayesian networks and performing classification using probabilistic relationships between variables.
-
-## Overview
-
-A Bayesian network is a probabilistic graphical model that represents variables and their conditional dependencies using a directed acyclic graph.
+This is a Java implementation of a Bayesian Network Classifier, developed as an academic project. The goal of the classifier is to classify vector of biomedical data according to if they correspond to a certain disease. A Bayesian network is a probabilistic graphical model that represents variables and their conditional dependencies using a directed acyclic graph, which can be trained to 
 
 This project includes implementations for representing samples, graphs and Bayesian networks, as well as applications for working with the network and performing classification.
 
 ## Project Structure
 
-The main Java classes are:
+The project consists of the following Java source files:
 
-| Class | Description |
+| File | Description |
 |---|---|
-| `Algoritmo` | Algorithm-related functionality |
-| `Amostra` | Represents a sample |
-| `AplicacaoRede` | Entry point for the network application |
-| `AplicacaoClassificacao` | Entry point for the classification application |
-| `Classificador` | Classification logic |
-| `Grafo` | Graph representation |
-| `RN` | Bayesian network representation |
+| `Algoritmo.java` | Briefly describe the purpose of the algorithm implemented in this file. |
+| `Amostra.java` | Describe how a sample and its data are represented. |
+| `AplicacaoRede.java` | Describe the main functionality of the Bayesian network application. |
+| `AplicacaoClassificacao.java` | Describe how the classification application works. |
+| `Classificador.java` | Explain how the classifier assigns classes to samples. |
+| `Grafo.java` | Describe how the graph and its connections are represented. |
+| `RN.java` | Explain how the Bayesian network is represented and managed. |
 
-All Java classes use the `learning` package.
-
+All Java classes belong to the `learning` package.
 ## Requirements
 
 - Java Development Kit (JDK)
