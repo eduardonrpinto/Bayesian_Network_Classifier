@@ -63,11 +63,11 @@ To run the application, first run the `AplicacaoRede.java` file to train a Bayes
 ```bash
 java -cp out learning.AplicacaoRede
 ```
-Start by introducing the 'Number of graphs' you want to start the training with and the 'S' parameter (default 0.5). Then, press "Read Smaple" to download a biomedical dataset corresponding to a certain disease and finally press "Execute Algorithm" to train the Bayes Classifier.
+Start by introducing the `Number of graphs` you want to start the training with and the `S` parameter (default 0.5). Then, press "Read Smaple" to download a biomedical dataset corresponding to a certain disease and finally press `Execute Algorithm` to train the Bayes Classifier.
 
 ### Classification Application
 
-After having trained a Bayes Classifier, run `AplicacaoClassificacao.java` to classify a sample. Introduce a 'Vector' of biomedical data (the dimensions should match with the Sample with which you trained the Classifier) and press 'Read Bayes Network' to download the Bayes Network just trained. Then press 'Classify' to obtain the classification: 0 if it is negative for the diease, 1 if it is positive.
+After having trained a Bayes Classifier, run `AplicacaoClassificacao.java` to classify a sample. Introduce a `Vector` of biomedical data (the dimensions should match with the Sample with which you trained the Classifier) and press `Read Bayes Network` to download the Bayes Network just trained. Then press `Classify` to obtain the classification: 0 if it is negative for the diease, 1 if it is positive.
 
 ```bash
 java -cp out learning.AplicacaoClassificacao
