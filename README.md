@@ -16,7 +16,7 @@ The project consists of the following Java source files:
 | `Grafo.java` | Class representing a Directed Acyclic Graph. |
 | `RN.java` | Class representing a Bayes Network. |
 
-All Java classes belong to the `learning` package.
+All Java classes belong to the `Learning` package.
 ## Requirements
 
 - Java Development Kit (JDK)
@@ -63,7 +63,7 @@ The `datasets` directory contains sample data for testing the application. Each 
 To run the application, first run the `AplicacaoRede.java` file to train a Bayes Classifier.
 
 ```bash
-java -cp out learning.AplicacaoRede
+java -cp out Learning.AplicacaoRede
 ```
 Start by introducing the `Number of graphs` you want to start the training with and the `S` parameter (default 0.5). Then, press "Read Smaple" to download a biomedical dataset corresponding to a certain disease and finally press `Execute Algorithm` to train the Bayes Classifier.
 
@@ -72,7 +72,7 @@ Start by introducing the `Number of graphs` you want to start the training with 
 After having trained a Bayes Classifier, run `AplicacaoClassificacao.java` to classify a sample. Introduce a `Vector` of biomedical data (the dimensions should match with the Sample with which you trained the Classifier) and press `Read Bayes Network` to download the Bayes Network just trained. Then press `Classify` to obtain the classification: 0 if it is negative for the diease, 1 if it is positive.
 
 ```bash
-java -cp out learning.AplicacaoClassificacao
+java -cp out Learning.AplicacaoClassificacao
 ```
 
 Run each command separately. If the application requires input files, ensure that the required files are available at the paths expected by the program.
