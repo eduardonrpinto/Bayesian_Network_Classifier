@@ -1,8 +1,6 @@
 # Bayesian Network Classifier
 
-This is a Java implementation of a Bayesian Network Classifier, developed as an academic project. The goal of the classifier is to classify vector of biomedical data according to if they correspond to a certain disease. A Bayesian network is a probabilistic graphical model that represents variables and their conditional dependencies using a directed acyclic graph, which can be trained to 
-
-This project includes implementations for representing samples, graphs and Bayesian networks, as well as applications for working with the network and performing classification.
+This repository contains a Java implementation of a Bayesian Network Classifier developed as an academic project. It uses Bayesian networks, learned from data through an algorithm based on the Minimum Description Length (MDL) score, to classify biomedical samples according to the presence of a particular disease.
 
 ## Project Structure
 
