@@ -10,9 +10,9 @@ The project consists of the following Java source files:
 
 | File | Description |
 |---|---|
-| `Algoritmo.java` | Generates $S$ candidate graph and optimises them using MDL score improvements to learn the structure of a Bayesian network from a dataset.|
+| `Algoritmo.java` | Generates acandidate graphs and optimises them using MDL score improvements to learn the structure of a Bayesian network from a dataset.|
 | `Amostra.java` | Reads a CSV file and stores its rows as samples of integer-valued variables. It provides methods to add and remove samples, access observations, count occurrences of specified variable values, and retrieve variable domains. |
-| `AplicacaoRede.java` | Provides a graphical user interface that allows users to load a CSV dataset, specify the number of candidate graphs (parameter `S`), execute the Bayesian network learning algorithm, and save the trained network to a file. |
+| `AplicacaoRede.java` | Provides a graphical user interface that allows users to load a CSV dataset, specify the number of candidate graphs, the parameter `S`, execute the Bayesian network learning algorithm, and save the trained network to a file. |
 | `AplicacaoClassificacao.java` | Provides a graphical user interface that allows users to download a trained Bayes Network Classifier, introduce a vector of biomedical observations and obtain a classification according to the trained classifier.  |
 | `Classificador.java` | Explain how the classifier assigns classes to samples. |
 | `Grafo.java` | Class representing a Directed Acyclic Graph. |
@@ -58,13 +58,16 @@ The compiled classes will be placed in the `out` directory.
 
 ## Running the Application
 
-### Bayesian Network Application
+To run the application, first run the `AplicacaoRede.java` file to train a Bayes Classifier.
 
 ```bash
 java -cp out learning.AplicacaoRede
 ```
+Start by introducing the 'Number of graphs' you want to start the training with and the 'S' parameter (default 0.5). Then, press "Read Smaple" to download a biomedical dataset corresponding to a certain disease and finally press "Execute Algorithm" to train the Bayes Classifier.
 
 ### Classification Application
+
+After having trained a Bayes Classifier, run `AplicacaoClassificacao.java` to classify a sample. Introduce a 'Vector' of biomedical data (the dimensions should match with the Sample with which you trained the Classifier) and press 'Read Bayes Network' to download the Bayes Network just trained. Then press 'Classify' to obtain the classification: 0 if it is negative for the diease, 1 if it is positive.
 
 ```bash
 java -cp out learning.AplicacaoClassificacao
