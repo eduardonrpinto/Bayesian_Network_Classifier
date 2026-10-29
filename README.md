@@ -10,7 +10,7 @@ The project consists of the following Java source files:
 
 | File | Description |
 |---|---|
-| `Algoritmo.java` | Briefly describe the purpose of the algorithm implemented in this file. |
+| `Algoritmo.java` | Generates candidate graph structures and optimises them using MDL score improvements to learn the structure of a Bayesian network from a dataset. |
 | `Amostra.java` | Describe how a sample and its data are represented. |
 | `AplicacaoRede.java` | Describe the main functionality of the Bayesian network application. |
 | `AplicacaoClassificacao.java` | Describe how the classification application works. |
